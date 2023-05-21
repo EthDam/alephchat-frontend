@@ -1,12 +1,13 @@
-import { FC, PropsWithChildren } from 'react'
-import 'twin.macro'
+import {FC, PropsWithChildren} from "react";
 
-export const BaseLayout: FC<PropsWithChildren> = ({ children }) => {
-  return (
-    <>
-      <div tw="relative flex min-h-full flex-col">
-        <main tw="relative flex grow flex-col">{children}</main>
-      </div>
-    </>
-  )
+export const BaseLayout: FC<PropsWithChildren> = ({children}) => {
+
+    return (
+        <>
+            <div id="main">
+                {children}
+            </div>
+        </>
+    )
+
 }

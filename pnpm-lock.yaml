@@ -3,6 +3,10 @@ lockfileVersion: '6.0'
 importers:
 
   .:
+    dependencies:
+      clsx:
+        specifier: ^1.2.1
+        version: 1.2.1
     devDependencies:
       husky:
         specifier: ^8.0.3
@@ -69,6 +73,9 @@ importers:
       '@scio-labs/use-inkathon':
         specifier: 0.0.1-alpha.41
         version: 0.0.1-alpha.41(@polkadot/api-contract@10.4.1)(@polkadot/api@10.4.1)(@polkadot/extension-inject@0.46.1)(@polkadot/types@10.4.1)(@polkadot/util@12.0.1)(react-dom@18.2.0)(react@18.2.0)
+      clsx:
+        specifier: ^1.2.1
+        version: 1.2.1
       next:
         specifier: ^13.3.1
         version: 13.3.1(@babel/core@7.21.4)(babel-plugin-macros@3.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -3334,6 +3341,11 @@ packages:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
     dev: true
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}

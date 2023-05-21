@@ -6,9 +6,12 @@ const customStyles = css`
   html {
     ${tw`scroll-smooth antialiased`}
   }
+
   body {
-    ${tw`bg-black text-white`}
-    ${tw`relative h-screen min-h-screen`}
+  }
+
+  $__next {
+    height: 100%;
   }
 
   #__next,
@@ -17,10 +20,12 @@ const customStyles = css`
   }
 
   /* Progress Bar */
+
   #nprogress {
     .bar {
       ${tw`bg-white`}
     }
+
     .peg,
     .spinner {
       ${tw`hidden!`}
