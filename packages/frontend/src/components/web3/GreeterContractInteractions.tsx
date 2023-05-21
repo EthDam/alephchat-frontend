@@ -79,10 +79,10 @@ export const GreeterContractInteractions: FC = () => {
     console.log(api)
     console.log(activeAccount)
 
-    console.log(
-      'derived pub key: ',
-      toHexString(decodeAddress('5FWPLMLAUmfSM48HrvkYhX2Phmih4zNtCWd2mXtF7xgAedVn')),
-    )
+    // console.log(
+    //   'derived pub key: ',
+    //   toHexString(decodeAddress('5FWPLMLAUmfSM48HrvkYhX2Phmih4zNtCWd2mXtF7xgAedVn')),
+    // )
 
     // cryptoWaitReady().then(() => {
     //     // load all available addresses and accounts

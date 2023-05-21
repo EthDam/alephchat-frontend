@@ -42,6 +42,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "clsx": "^1.2.1"
+    "clsx": "^1.2.1",
+    "jsencrypt": "^3.3.2"
   }
 }
