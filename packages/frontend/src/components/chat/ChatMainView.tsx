@@ -126,7 +126,7 @@ export const ChatMainView: FC = () => {
                                     {
                                         messages.map((value, index) => (
                                             <div key={index}>
-                                                <div className="chat-message-left pb-4">
+                                                <div className="chat-message-left pb-4" style={{"color": "black"}}>
                                                     <div>
                                                         <img src="https://bootdey.com/img/Content/avatar/avatar3.png"
                                                              className="rounded-circle mr-1" alt="Sharon Lessman"
@@ -150,7 +150,7 @@ export const ChatMainView: FC = () => {
                                     <input type="text" {...register("messageInput")} class="form-control"
                                            placeholder="Type your message"/>
                                     <button class="btn btn-primary" onClick={appendMessage}>Send</button>
-                                    <button className="btn btn-primary" onClick={testGetChats}>Test get chats</button>
+                                    {/*<button className="btn btn-primary" onClick={testGetChats}>Test get chats</button>*/}
                                 </div>
                             </div>
                         </div>
