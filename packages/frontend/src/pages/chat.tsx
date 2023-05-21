@@ -12,8 +12,9 @@ export const ChatPage: NextPage = () => {
     return (
         <>
             <ChatFixedHeader/>
-            <ChatMainView/>
-            {!isConnected && <WalletConnector/>}
+            {/*<ChatMainView/>*/}
+            <WalletConnector/>
+            {/*{!isConnected && <WalletConnector/>}*/}
             {!!isConnected && <ChatMainView/>}
         </>
     )

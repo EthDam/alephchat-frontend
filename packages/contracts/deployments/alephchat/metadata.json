@@ -17,7 +17,8 @@
     "name": "alephchat",
     "version": "0.1.0",
     "authors": [
-      "[your_name] <[your_email]>"
+      "Maciek Malik <poczta@maciekmalik.pl>",
+      "Piotr Swierzy"
     ]
   },
   "spec": {
