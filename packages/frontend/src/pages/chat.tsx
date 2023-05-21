@@ -12,8 +12,7 @@ export const ChatPage: NextPage = () => {
         <>
             <header id="header" className="alt">
                 <span className="logo"><img src="/images/logo.png" alt=""/></span>
-                <h1>ALEPH CHAT </h1>
-                <p>Online chat based on Aleph blockchain. Easy to use, fully secured messages.</p>
+                <h3>ALEPH CHAT </h3>
             </header>
             <ChatMainView/>
             {!isConnected && <WalletConnector/>}

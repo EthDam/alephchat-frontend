@@ -3786,10 +3786,13 @@ body.is-preload #header.alt .logo {
     color: #F978BF
 }
 
-.color-primary-bg {
+.color-secondary-fg {
     color: #F1F0F1
 }
 
+.color-primary-bg {
+    background-color: #030829;
+}
 
 section {
     background-color: #030829;
@@ -3806,8 +3809,8 @@ section {
 
 body {
     background-color: #030829;
-
 }
+
 
 .chat-offline {
     color: #e4606d
