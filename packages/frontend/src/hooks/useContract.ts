@@ -23,7 +23,11 @@ export const useContract = () => {
 
         const receiverKeyCipher = encryptRSA(derivePublicKeyFromAddress(receiver), keyPair.privateKey);
 
-        console.log('receiverKeyCipher',receiverKeyCipher)
+        console.log('receiverKeyCipher', receiverKeyCipher)
+
+        const senderKeyCipher = encryptRSA(derivePublicKeyFromAddress(activeAccount?.address || ''), keyPair.privateKey)
+
+        console.log('senderKeyCipher', senderKeyCipher)
 
         await contractTx(api, activeAccount?.address, contract, "initChat", {}, [{
             "participants": [
@@ -35,7 +39,7 @@ export const useContract = () => {
                 "message": cipher
             },
             "encryptedCypher": [
-                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", // Encrypt with own public key
+                senderKeyCipher, // Encrypt with own public key
                 receiverKeyCipher || '' // Encrypt with receiver public key
             ]
         }])
