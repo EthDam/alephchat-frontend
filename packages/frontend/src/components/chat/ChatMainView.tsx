@@ -76,7 +76,7 @@ export const ChatMainView: FC = () => {
                                     <img src="https://bootdey.com/img/Content/avatar/avatar5.png"
                                          class="rounded-circle mr-1" alt="User1" width="40" height="40"/>
                                     <div class="flex-grow-1 ml-3">
-                                        User1
+                                        MarketAccTest
                                         <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ export const ChatMainView: FC = () => {
                                     <img src="https://bootdey.com/img/Content/avatar/avatar2.png"
                                          class="rounded-circle mr-1" alt="User2" width="40" height="40"/>
                                     <div class="flex-grow-1 ml-3">
-                                        User2
+                                        Account 3
                                         <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ export const ChatMainView: FC = () => {
                                     <img src="https://bootdey.com/img/Content/avatar/avatar3.png"
                                          class="rounded-circle mr-1" alt="User3" width="40" height="40"/>
                                     <div class="flex-grow-1 ml-3">
-                                        User3
+                                        ReceiverAccount 2
                                         <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@ export const ChatMainView: FC = () => {
                                     <img src="https://bootdey.com/img/Content/avatar/avatar4.png"
                                          class="rounded-circle mr-1" alt="User4" width="40" height="40"/>
                                     <div class="flex-grow-1 ml-3">
-                                        User4
+                                        PSTestnet1
                                         <div class="small"><span class="fas fa-circle chat-offline"></span> Offline
                                         </div>
                                     </div>

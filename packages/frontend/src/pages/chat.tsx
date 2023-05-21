@@ -8,7 +8,6 @@ import ChatFixedHeader from "@components/chat/ChatFixedHeader";
 export const ChatPage: NextPage = () => {
     const {api, activeAccount, isConnected, activeSigner} = useInkathon()
 
-
     return (
         <>
             <ChatFixedHeader/>

@@ -41,11 +41,14 @@ export const useContract = () => {
         }])
     }
     const sendMessage = () => {
+
+
+
     }
 
     const readMessages = async () => {
         if (!contract || !api) return
-        const result = await contractQuery(api, '', contract, 'getUserChats', {}, ["5FWPLMLAUmfSM48HrvkYhX2Phmih4zNtCWd2mXtF7xgAedVn"])
+        const result = await contractQuery(api, '', contract, 'getUserChats', {}, ["5HTReokLvsdaykEV4ZdPSEimhxAuMhPzsfj2HBngcw3LDLhh"])
         const {output, isError, decodedOutput} = decodeOutput(result, contract, 'getUserChats')
         // if (isError) throw new Error(decodedOutput)
         if (isError) {
