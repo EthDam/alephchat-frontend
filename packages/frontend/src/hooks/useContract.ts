@@ -11,17 +11,17 @@ export const useContract = () => {
 
     const initChat = async (receiver: any, initialMessage: string) => {
 
-        let keyPair = generateKeyPair();
+        let keyPair = await generateKeyPair();
 
-        let cipher = encryptRSA(keyPair.publicKey, initialMessage);
+        let cipher = await encryptRSA(keyPair.publicKey, initialMessage);
 
         console.log('cipher', cipher);
 
-        const receiverKeyCipher = encryptRSA(derivePublicKeyFromAddress(receiver), keyPair.privateKey);
+        const receiverKeyCipher = await encryptRSA(derivePublicKeyFromAddress(receiver), keyPair.privateKey);
 
         console.log('receiverKeyCipher', receiverKeyCipher)
 
-        const senderKeyCipher = encryptRSA(derivePublicKeyFromAddress(activeAccount?.address || ''), keyPair.privateKey)
+        const senderKeyCipher = await encryptRSA(derivePublicKeyFromAddress(activeAccount?.address || ''), keyPair.privateKey)
 
         console.log('senderKeyCipher', senderKeyCipher)
 
