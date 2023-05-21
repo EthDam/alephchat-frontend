@@ -9,7 +9,7 @@ const WalletConnector = () => {
             <section id="content" className="main align-center">
                 <form method="post" action="#">
                     <div className="row gtr-uniform align-center"
-                         style={{'justify-content': "center", "margin": "auto"}}>
+                         style={{'justify-content': "center", "margin": "auto", "display": "grid"}}>
 
                         <ConnectButton></ConnectButton>
                         <Link href="/">
