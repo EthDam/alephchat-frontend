@@ -40,10 +40,17 @@ export const useContract = () => {
             ]
         }])
     }
-    const sendMessage = () => {
-
-
-
+    const sendMessage = async (chatId: number, message: string) => {
+        if (!contract || !api) return
+        await contractTx(api, activeAccount?.address, contract, "addMessage", {}, [
+            chatId,
+            {
+                "author": [
+                    activeAccount?.address,
+                ],
+                "message": message
+            }
+        ])
     }
 
     const readMessages = async () => {

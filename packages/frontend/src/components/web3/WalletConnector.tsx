@@ -12,7 +12,7 @@ const WalletConnector = () => {
                          style={{'justify-content': "center", "margin": "auto", "display": "grid"}}>
 
                         <ConnectButton></ConnectButton>
-                        <Link href="/">
+                        <Link href="/" style={{"padding-left": "0", "border": "none"}}>
                             <Button
                                 py={6}
                                 pl={6}

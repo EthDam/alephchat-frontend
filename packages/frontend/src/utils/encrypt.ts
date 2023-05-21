@@ -1,11 +1,10 @@
-import dynamic from "next/dynamic";
+// const JSEncrypt = dynamic(
+//     () => import("jsencrypt").then((mod) => mod.JSEncrypt),
+//     {ssr: false}
+// );
 
-const JSEncrypt = dynamic(
-    () => import("jsencrypt").then((mod) => mod.JSEncrypt),
-    {ssr: false}
-);
 
-// import {JSEncrypt} from "jsencrypt";
+import {JSEncrypt} from "jsencrypt";
 
 
 export interface KeyPair {
