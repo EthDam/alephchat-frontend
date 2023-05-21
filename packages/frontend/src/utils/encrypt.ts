@@ -1,10 +1,12 @@
+import dynamic from "next/dynamic";
+
 // const JSEncrypt = dynamic(
 //     () => import("jsencrypt").then((mod) => mod.JSEncrypt),
-//     {ssr: false}
+//     {ssr: false, suspense: true}
 // );
 
 
-import {JSEncrypt} from "jsencrypt";
+// import {JSEncrypt} from "jsencrypt";
 
 
 export interface KeyPair {
@@ -12,7 +14,8 @@ export interface KeyPair {
     publicKey: string
 }
 
-export const generateKeyPair = (): KeyPair => {
+export const generateKeyPair = async (): Promise<KeyPair> => {
+    const JSEncrypt = (await import("jsencrypt")).default;
 
     // Start our encryptor.
     const encrypt = new JSEncrypt();
@@ -31,13 +34,15 @@ export const generateKeyPair = (): KeyPair => {
 
 }
 
-export const encryptRSA = (key: string, message: string) => {
+export const encryptRSA = async (key: string, message: string) => {
+    const JSEncrypt = (await import("jsencrypt")).default;
     const encrypt = new JSEncrypt();
     encrypt.setPublicKey(key);
     return encrypt.encrypt(message);
 }
 
-export const decryptRSA = (key: string, cipherText: string) => {
+export const decryptRSA = async (key: string, cipherText: string) => {
+    const JSEncrypt = (await import("jsencrypt")).default;
     const decrypt = new JSEncrypt();
     decrypt.setPrivateKey(key);
     return decrypt.decrypt(cipherText);
