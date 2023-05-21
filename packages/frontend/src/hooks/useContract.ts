@@ -11,13 +11,9 @@ export const useContract = () => {
 
     const initChat = async (receiver: any, initialMessage: string) => {
 
-        // let msg = "Test message :)";
-
         let keyPair = generateKeyPair();
 
         let cipher = encryptRSA(keyPair.publicKey, initialMessage);
-
-        // let dec = decryptRSA(keyPair.privateKey, cipher || '');
 
         console.log('cipher', cipher);
 
@@ -29,7 +25,7 @@ export const useContract = () => {
 
         console.log('senderKeyCipher', senderKeyCipher)
 
-        await contractTx(api, activeAccount?.address, contract, "initChat", {}, [{
+        await contractTx(api, activeAccount?.address, contract, "initChat", {gasLimit: 391236812800}, [{
             "participants": [
                 activeAccount?.address,
                 receiver
