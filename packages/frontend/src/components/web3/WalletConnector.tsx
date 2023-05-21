@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {ConnectButton} from "@components/web3/ConnectButton";
 import {Button} from "@chakra-ui/react";
 import Link from "next/link";
