@@ -6,7 +6,8 @@
     "eslint:recommended",
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "next"
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -19,6 +20,8 @@
     "react-hooks/exhaustive-deps": "off",
     "react/jsx-no-target-blank": "off",
     "no-extra-boolean-cast": "off",
-    "prefer-const": "warn"
+    "prefer-const": "warn",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }
