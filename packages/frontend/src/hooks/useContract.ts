@@ -1,12 +1,29 @@
 import {contractQuery, contractTx, decodeOutput, useInkathon, useRegisteredContract} from "@scio-labs/use-inkathon";
 import {ContractIds} from "@deployments/deployments";
+import {encryptRSA, generateKeyPair} from "@utils/encrypt";
+import {derivePublicKeyFromAddress} from "@utils/publicKey";
 
 export const useContract = () => {
     const {api, activeAccount, isConnected, activeSigner} = useInkathon()
     const {contract, address: contractAddress} = useRegisteredContract(ContractIds.Chat)
 
 
-    const initChat = async (receiver: any) => {
+    const initChat = async (receiver: any, initialMessage: string) => {
+
+        // let msg = "Test message :)";
+
+        let keyPair = generateKeyPair();
+
+        let cipher = encryptRSA(keyPair.publicKey, initialMessage);
+
+        // let dec = decryptRSA(keyPair.privateKey, cipher || '');
+
+        console.log('cipher', cipher);
+
+        const receiverKeyCipher = encryptRSA(derivePublicKeyFromAddress(receiver), keyPair.privateKey);
+
+        console.log('receiverKeyCipher',receiverKeyCipher)
+
         await contractTx(api, activeAccount?.address, contract, "initChat", {}, [{
             "participants": [
                 activeAccount?.address,
@@ -14,11 +31,11 @@ export const useContract = () => {
             ],
             "initMessage": {
                 "author": activeAccount?.address,
-                "message": "msgtest"
+                "message": cipher
             },
             "encryptedCypher": [
-                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", // Encrypt with own public key
+                receiverKeyCipher || '' // Encrypt with receiver public key
             ]
         }])
     }

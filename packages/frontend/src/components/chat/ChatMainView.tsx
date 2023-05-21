@@ -29,10 +29,11 @@ export const ChatMainView: FC = () => {
     }
 
     const handleNewChat = () => {
-        let receiverAddress = getValues("newChatReceiver");
+        const receiverAddress = getValues("newChatReceiver");
+        const initialMessage = getValues("messageInput");
         if (!receiverAddress) return;
         console.log("initializing chat for receiver: " + receiverAddress);
-        initChat(receiverAddress).then(r => {
+        initChat(receiverAddress, initialMessage as string).then(r => {
             console.log("created new chat session")
         })
     }
