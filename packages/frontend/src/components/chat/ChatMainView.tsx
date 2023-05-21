@@ -10,7 +10,7 @@ export const ChatMainView: FC = () => {
         <main class="content" style={{"background-color": "#030829"}}>
             <div class="container p-0">
                 <h1 class="h3 mb-3">Your chats</h1>
-                <div class="card" style={{"background-color": "#030829"}}>
+                <div class="card">
                     <div class="row g-0">
                         <div class="col-12 col-lg-5 col-xl-3 border-right">
                             <div class="px-4 d-none d-md-block">

@@ -3817,7 +3817,7 @@ body {
 }
 
 .chat-messages {
-    background-color: #030829;
+    /*background-color: #030829;*/
     display: flex;
     flex-direction: column;
     max-height: 800px;
@@ -3826,18 +3826,18 @@ body {
 
 .chat-message-left,
 .chat-message-right {
-    background-color: #030829;
+    /*background-color: #030829;*/
     display: flex;
     flex-shrink: 0
 }
 
 .chat-message-left {
-    background-color: #030829;
+    /*background-color: #030829;*/
     margin-right: auto
 }
 
 .chat-message-right {
-    background-color: #030829;
+    /*background-color: #030829;*/
     flex-direction: row-reverse;
     margin-left: auto
 }
