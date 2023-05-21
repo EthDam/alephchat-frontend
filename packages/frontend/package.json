@@ -13,10 +13,7 @@
     "dev-and-node": "concurrently \"pnpm dev\" \"pnpm node\" --names \"Next,Node\" --kill-others",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production next start",
-    "type-check": "tsc --pretty --noEmit",
-    "lint": "prettier . --check && pnpm eslint",
-    "lint:fix": "prettier . --write && pnpm eslint --fix",
-    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
     "@azns/resolver-core": "^0.0.3",
@@ -59,15 +56,9 @@
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.59.1",
-    "@typescript-eslint/parser": "^5.59.1",
     "babel-loader": "^9.1.2",
     "babel-plugin-macros": "^3.1.0",
     "concurrently": "^8.0.1",
-    "eslint": "^8.39.0",
-    "eslint-config-next": "^13.3.1",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.8",
     "prettier-plugin-twin.macro": "^1.0.12",
     "tailwindcss": "^3.3.2",
