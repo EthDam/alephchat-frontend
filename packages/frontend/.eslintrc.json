@@ -3,11 +3,11 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "extends": [
-    "eslint:recommended",
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "next"
+//    "eslint:recommended",
+//    "next/core-web-vitals",
+//    "plugin:@typescript-eslint/recommended",
+//    "prettier",
+//    "next"
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
