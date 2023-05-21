@@ -18,7 +18,7 @@ export const generateKeyPair = (): KeyPair => {
     const encrypt = new JSEncrypt();
 
     // Generate a RSA key pair using the `JSEncrypt` library.
-    const crypt = new JSEncrypt({default_key_size: 2048});
+    const crypt = new JSEncrypt({default_key_size: `2048`});
     const PublicPrivateKey = {
         PublicKey: crypt.getPublicKey(),
         PrivateKey: crypt.getPrivateKey()
