@@ -6,7 +6,7 @@ export const HomeTopHeader: FC = () => {
         <header id="header" className={clsx("alt", "color-secondary-fg")}>
             <span className="logo"><img src="/images/logo.png" alt=""/></span>
             <h1>ALEPH CHAT </h1>
-            <p>Online chat based on Aleph blockchain. Easy to use, fully secured messages.</p>
+            <p>Your Gateway to Secure and Private Messaging.</p>
         </header>
     </>;
 }

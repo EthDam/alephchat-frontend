@@ -8,12 +8,9 @@ export const HomeContent: FC = () => {
             <div className="spotlight">
                 <div className="content">
                     <header className="major">
-                        <h2 className="color-primary-fg">SEND ENCRYPTED MESSAGES</h2>
+                        <h2 className="color-primary-fg"><b>Your Privacy, Our Priority</b></h2>
                     </header>
-                    <p className="color-secondary-fg">Aleph chat - fully decentralised and encrypted messaging.
-                        LOREM
-                        IPSUM
-                        PROPAGANDA LOREM IPSUM </p>
+                    <p className="color-secondary-fg">AlephChat prioritizes your privacy by employing cutting-edge encryption protocols. Your messages are shielded from unauthorized access, ensuring that only you and your intended recipients can read them. Rest easy knowing that your sensitive conversations remain confidential.</p>
                     <ul className="actions">
                         <li>
                             <Link href="/chat">
@@ -42,29 +39,22 @@ export const HomeContent: FC = () => {
             <header className="major">
                 <h2 className="color-primary-fg">WHY YOU SHOULD USE ALEPHCHAT</h2>
             </header>
-            <p className="color-secondary-fg">You don`t have to worry about message leaking. Your messages will be
-                fully
-                decentralized due to blockchain /lorem ipsum lorem ipsum/</p>
+            <p className="color-secondary-fg">AlephChat prioritizes your privacy by employing cutting-edge encryption protocols. Your messages are shielded from unauthorized access, ensuring that only you and your intended recipients can read them. Rest easy knowing that your sensitive conversations remain confidential.</p>
             <ul className="features">
                 <li>
                     <span className="logo"><img src="/images/safe.png" alt=""/></span>
-                    <h3 className="color-primary-fg">SAFETY</h3>
-                    <p className="color-secondary-fg">This is the main reason why you should use Aleph Chat.
-                        Blockchain
-                        technology is
-                        the guaranty of safety.</p>
+                    <h2 className="color-primary-fg">Safety First: Your Privacy Matters</h2>
+                    <p className="color-secondary-fg">At AlephChat, we prioritize your privacy by implementing robust encryption and Aleph Zero blockchain technology, ensuring your messages are secure and protected from unauthorized access.</p>
                 </li>
                 <li>
                     <span className="logo"><img src="/images/easy.png" alt=""/></span>
-                    <h3 className="color-primary-fg">EASY TO USE</h3>
-                    <p className="color-secondary-fg">Just three simple steps to join Aleph Chat. No extra data
-                        needed. </p>
+                    <h2 className="color-primary-fg">Effortlessly Easy to Use</h2>
+                    <p className="color-secondary-fg">AlephChat offers a user-friendly interface, making messaging a seamless and intuitive experience, so you can focus on connecting with others without any hassle. </p>
                 </li>
                 <li>
                     <span className="logo"><img src="/images/private.png" alt=""/></span>
-                    <h3 className="color-primary-fg">PRIVATE MESSAGE </h3>
-                    <p className="color-secondary-fg">Our chat guarantee you sending private messages to your
-                        friends.</p>
+                    <h3 className="color-primary-fg">Your Messages, Your Privacy </h3>
+                    <p className="color-secondary-fg">With end-to-end encryption, AlephChat guarantees that only you and your intended recipients have access to your messages, ensuring your conversations remain private and confidential.</p>
                 </li>
             </ul>
         </section>
