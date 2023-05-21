@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {contractQuery, contractTx, decodeOutput, useInkathon, useRegisteredContract} from "@scio-labs/use-inkathon";
 import {ContractIds} from "@deployments/deployments";
 import {encryptRSA, generateKeyPair} from "@utils/encrypt";

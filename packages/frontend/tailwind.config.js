@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-env node */
 // @ts-check
 
 const defaultTheme = require('tailwindcss/defaultTheme')

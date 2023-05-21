@@ -1,4 +1,3 @@
-/* eslint-disable */
 //@ts-nocheck
 import {FC, useState} from "react";
 import {useForm} from "react-hook-form";
